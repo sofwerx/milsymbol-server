@@ -1,0 +1,13 @@
+version: '2.0'
+
+services:
+
+  milsymbol-server:
+    build:
+      context: .
+    image: milsymbol-server:1.0.0
+    container_name: milsymbol-server
+    hostname: milsymbol-server
+    ports:
+      - 2525:2525
+
